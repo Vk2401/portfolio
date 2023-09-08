@@ -1,0 +1,77 @@
+/* fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&family=Poppins:wght@400;600&display=swap');
+
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* color: rrggbb; ---  format*/
+
+    --primary-color : #1b1f24;
+    --primary-blue: #12bdff;
+    --primary-white:#fff;
+}
+.blue-span{
+    color:  var(--primary-blue);
+}
+a{
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+/* header styles */
+header{
+    background-color: var(--primary-color);
+    padding:  20px;
+    color: var(--primary-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    margin-right: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--primary-white);
+}
+header ul li a:hover{
+    color: var(--primary-blue);
+}
+header button{
+    font-weight: 900;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    border-radius: 10px;
+}
+header button:hover {
+    cursor: pointer;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+  }
+  .logo-text{
+    letter-spacing: 2px;
+  }
+  .menu-icon{
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 769px) {
+    /* Media query for header */
+    .menu-icon{
+        display: block;
+      }
+
+}
