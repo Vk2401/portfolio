@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
     font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -15,9 +14,26 @@
     --primary-color : #1b1f24;
     --primary-blue: #12bdff;
     --primary-white:#fff;
+    --primary-grey:#969595;
 }
 .blue-span{
     color:  var(--primary-blue);
+}
+.grey-span{
+    color:  var(--primary-grey);
+}
+.btn{
+    margin-top: 7px;
+    font-weight: 900;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    border-radius: 10px;
+    
+}
+.btn:hover{
+    box-shadow: 2px 2px 10px var(--primary-blue);
 }
 a{
     text-decoration: none;
@@ -63,15 +79,35 @@ header button:hover {
   .logo-text{
     letter-spacing: 2px;
   }
-  .menu-icon{
-    display: none;
-    cursor: pointer;
-  }
 
-  @media (max-width: 769px) {
-    /* Media query for header */
-    .menu-icon{
-        display: block;
-      }
+  /* hero section design */
 
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+.hero-text{
+    color: var(--primary-white);
+}
+.social-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+.social-icon a i.fa-instagram:hover{
+    border-radius: 5px;
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social-icon a i.fa-linkedin:hover{
+color: #0072b1 ;
+}
+.social-icon a i.fa-github:hover{
+    color: #4078c0;
 }
