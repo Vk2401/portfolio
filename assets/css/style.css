@@ -2,27 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&family=Poppins:wght@400;600&display=swap');
 
 /* global styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-:root{
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
     /* color: rrggbb; ---  format*/
 
-    --primary-color : #1b1f24;
+    --primary-color: #1b1f24;
     --primary-blue: #12bdff;
-    --primary-white:#fff;
-    --primary-grey:#969595;
+    --primary-white: #fff;
+    --primary-grey: #969595;
 }
-.blue-span{
-    color:  var(--primary-blue);
+
+.blue-span {
+    color: var(--primary-blue);
 }
-.grey-span{
-    color:  var(--primary-grey);
+
+.grey-span {
+    color: var(--primary-grey);
 }
-.btn{
+
+.btn {
     margin-top: 7px;
     font-weight: 900;
     padding: 5px;
@@ -30,40 +39,53 @@
     color: var(--primary-blue);
     border: 2px solid var(--primary-blue);
     border-radius: 10px;
-    
+
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: 2px 2px 10px var(--primary-blue);
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--primary-white);
 }
+img {
+    /* image in responsive mode */
+
+    max-width: 100%;
+    height: auto;
+}
 
 /* header styles */
-header{
+header {
     background-color: var(--primary-color);
-    padding:  20px;
+    padding: 20px;
     color: var(--primary-white);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-header ul{
+
+header ul {
     display: flex;
     list-style: none;
 }
-header ul li{
+
+header ul li {
     margin-right: 20px;
 }
-header ul li a{
+
+header ul li a {
     text-decoration: none;
     color: var(--primary-white);
 }
-header ul li a:hover{
+
+header ul li a:hover {
     color: var(--primary-blue);
 }
-header button{
+
+header button {
     font-weight: 900;
     padding: 10px;
     background-color: var(--primary-color);
@@ -71,43 +93,114 @@ header button{
     border: 2px solid var(--primary-blue);
     border-radius: 10px;
 }
+
 header button:hover {
     cursor: pointer;
     background-color: var(--primary-blue);
     color: var(--primary-white);
-  }
-  .logo-text{
+}
+
+.logo-text {
     letter-spacing: 2px;
-  }
+}
 
-  /* hero section design */
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
 
-.hero-section{
+.menu-icon {
+    display: none;
+}
+
+.cancel-icon {
+    display: none;
+}
+
+
+/* hero section design */
+
+.hero-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary-color);
 }
-.hero-text{
+
+.hero-text {
     color: var(--primary-white);
+    padding: 20px;
 }
-.social-icon{
+
+.social-icon {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     width: 80px;
 }
-.social-icon a i.fa-instagram:hover{
+
+.social-icon a i.fa-instagram:hover {
     border-radius: 5px;
-    background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
-.social-icon a i.fa-linkedin:hover{
-color: #0072b1 ;
+
+.social-icon a i.fa-linkedin:hover {
+    color: #0072b1;
 }
-.social-icon a i.fa-github:hover{
+
+.social-icon a i.fa-github:hover {
     color: #4078c0;
+}
+
+
+
+/* media queries  */
+
+@media (max-width: 860px) {
+
+    /* header media queries */
+    .header-links {
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        right: -100vh;
+        display: none;
+        background-color: var(--primary-color);
+        justify-content: start;
+        padding: 20px;
+        transition: right 0.3s ease;
+        box-shadow: 2px 5px 15px var(--primary-blue);
+    }
+
+    header ul {
+        margin-top: 40px;
+        flex-direction: column;
+        line-height: 3rem;
+    }
+
+    .cancel-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+    /* hero section media queries */
+    .hero-section {
+        flex-direction: column;
+    }
 }

@@ -10,7 +10,9 @@
     <!-- css links -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- icons from awesome material -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,18 +21,31 @@
         <div>
             <a href="./index.html"><span class="logo-text"><span class="blue-span">Vasanth</span>kumar S</span></a>
         </div>
-       
-            <div >
+
+        <div class="header-links">
+            <!-- cancel icon for menu in mobile viewport -->
+            <div class="cancel-icon">
+                <i class="fa-solid fa-xmark" style="font-size: larger;"></i>
+            </div>
+
+            <div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./index.html">Contact</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
                 </ul>
             </div>
-            <div >
+            <div>
                 <button>Download Resume</button>
             </div>
-    
+
+        </div>
+
+        <!-- menu icon for menu in mobile viewport -->
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
     </header>
     <!-- main content -->
     <main>
@@ -42,17 +57,22 @@
                     I develop Websites, software, ui Design and I love to code.❤️
                 </p>
                 <div class="social-icon">
-                    <a href="https://www.instagram.com/vasanthkumar_24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/vasanthkumar_24/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/Vk2401" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/vasanthkumar-s-326527236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vasanthkumar-s-326527236/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <button class="btn">Read More</button>
+                <a href="#about"><button class="btn">Read More</button></a>
             </div>
             <div class="hero-img">
                 <img src="./assets/img/hero-img.png" alt="vasanth portfolio cartoon image">
             </div>
         </section>
     </main>
+
+    <!-- script link only for menu toggle -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
