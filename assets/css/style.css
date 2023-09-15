@@ -18,6 +18,7 @@ html {
     /* color: rrggbb; ---  format*/
 
     --primary-color: #1b1f24;
+    --primary-light-color: #22282f;
     --primary-blue: #12bdff;
     --primary-white: #fff;
     --primary-grey: #969595;
@@ -50,6 +51,7 @@ a {
     text-decoration: none;
     color: var(--primary-white);
 }
+
 img {
     /* image in responsive mode */
 
@@ -158,7 +160,59 @@ header button:hover {
     color: #4078c0;
 }
 
+/* about section */
+.about-section {
+    background-color: var(--primary-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
 
+.about-section img {
+    border-radius: 50%;
+    height: 400px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-blue);
+    box-shadow: 2px 2px 30px var(--primary-blue);
+
+}
+
+.about-section ol {
+    list-style: none;
+    color: var(--primary-white);
+    margin-left: 90px;
+
+}
+
+.about-section ol li h1 {
+    color: var(--primary-white);
+    margin-bottom: 10px;
+    font-size: 50px;
+
+}
+
+.about-section li {
+
+    margin-bottom: 10px;
+    color: var(--primary-grey);
+
+}
+
+.about-section li a {
+    color: var(--primary-grey);
+
+}
+
+.about-section li a:hover {
+    color: var(--primary-blue);
+
+}
+
+.about-section li strong {
+    color: var(--primary-white);
+
+}
 
 /* media queries  */
 
@@ -203,4 +257,27 @@ header button:hover {
     .hero-section {
         flex-direction: column;
     }
+
+    /* about section media queries */
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section ol {
+        margin-left: 0;
+        margin-top: 40px;
+
+    }
+
+    .about-section img {
+        height: auto;
+
+    }
+
+    .about-section ol li h1 {
+
+        font-size: 30px;
+
+    }
+
 }
