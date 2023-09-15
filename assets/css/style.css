@@ -188,10 +188,13 @@ header button:hover {
     justify-content: center;
     padding: 40px 80px;
 }
-
+.img-div{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
 .about-section img {
     border-radius: 50%;
-    height: 400px;
     background-color: var(--primary-light-color);
     border: 2px solid var(--primary-theme-color);
     box-shadow: 2px 2px 30px var(--primary-theme-color);
