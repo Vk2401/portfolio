@@ -279,5 +279,10 @@ header button:hover {
         font-size: 30px;
 
     }
+    .about-section {
+
+        padding: 40px 30px;
+    }
+    
 
 }
