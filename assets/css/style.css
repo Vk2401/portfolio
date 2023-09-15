@@ -18,9 +18,12 @@ html {
     /* color: rrggbb; ---  format*/
 
     --primary-color: #1b1f24;
+    --primary-color-hover: #274049;
     --primary-light-color: #22282f;
     --primary-blue: #12bdff;
     --primary-white: #fff;
+    --primary-yellow: #ffba53;
+    --primary-yellow-hover: #ff8f8f;
     --primary-grey: #969595;
 }
 
@@ -162,7 +165,7 @@ header button:hover {
 
 /* about section */
 .about-section {
-    background-color: var(--primary-light-color);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +175,7 @@ header button:hover {
 .about-section img {
     border-radius: 50%;
     height: 400px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light-color);
     border: 2px solid var(--primary-blue);
     box-shadow: 2px 2px 30px var(--primary-blue);
 
@@ -212,6 +215,50 @@ header button:hover {
 .about-section li strong {
     color: var(--primary-white);
 
+}
+
+/* service section */
+
+.service-section{
+    background-color: var(--primary-light-color);
+    color: var(--primary-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.service-cards-container{
+    display: flex;
+    margin-top: 20px;
+}
+.service-card{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.service-card:hover{
+    background-color: var(--primary-color-hover);
+    box-shadow: 2px 5px 20px var(--primary-color);
+}
+.service-card a{
+    color: var(--primary-yellow);
+    
+}
+.service-card a:hover{
+    color: var(--primary-yellow-hover);
+    
+
+}
+.service-card p{
+    color: var(--primary-grey);
+    padding: 5px 0;
+}
+.service-card i{
+    padding: 10px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    margin: 5px;
 }
 
 /* media queries  */
@@ -266,23 +313,25 @@ header button:hover {
     .about-section ol {
         margin-left: 0;
         margin-top: 40px;
-
     }
 
     .about-section img {
         height: auto;
-
     }
 
     .about-section ol li h1 {
-
         font-size: 30px;
-
     }
     .about-section {
-
         padding: 40px 30px;
     }
-    
+
+    /* service section */
+    .service-cards-container{
+        flex-direction: column;
+    }
+    .service-card{
+        margin: 10px 0;
+    }
 
 }
