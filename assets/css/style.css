@@ -62,6 +62,32 @@ img {
     height: auto;
 }
 
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+
+
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.theme-picker {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
 .submit-btn {
     font-weight: 900;
     padding: 10px;
@@ -188,11 +214,12 @@ header button:hover {
     justify-content: center;
     padding: 40px 80px;
 }
-.img-div{
+
+.img-div {
     height: 300px;
     width: 300px;
-    position: relative;
 }
+
 .about-section img {
     border-radius: 50%;
     background-color: var(--primary-light-color);
