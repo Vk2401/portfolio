@@ -9,7 +9,7 @@
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 ## Description
-This is a simple portfolio design created using HTML, CSS, and JavaScript to implement a responsive menu toggle feature. The project is designed to showcase your work and provide a seamless user experience on both desktop and mobile devices.
+This is a simple portfolio design created using HTML, CSS, and JavaScript to implement a responsive menu toggle feature, with theme color picker. The project is designed to showcase your work and provide a seamless user experience on both desktop and mobile devices.
 ## Demo
 <a target="_blank" href="https://vk2401.github.io/portfolio/">Live Link</a>
 
@@ -18,7 +18,7 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 ## Technologies Used 
 - HTML
 - CSS
-- Js(only for menu toggle in mobile view)
+- Js(only for menu toggle in mobile view & theme color picker)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
