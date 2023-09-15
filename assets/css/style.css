@@ -314,10 +314,27 @@ textarea {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    resize: none;
+    outline: none;
 
 
 }
+/* footer section */
 
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+footer p{
+    font-size: 12px;
+    color: var(--primary-grey);
+}
+footer p a{
+    color: var(--primary-white);
+}
+footer p a:hover{
+    color: var(--primary-blue);
+}
 /* media queries  */
 
 @media (max-width: 860px) {
