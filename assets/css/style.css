@@ -319,22 +319,27 @@ textarea {
 
 
 }
+
 /* footer section */
 
-footer{
+footer {
     background-color: var(--primary-color);
     text-align: center;
 }
-footer p{
+
+footer p {
     font-size: 12px;
     color: var(--primary-grey);
 }
-footer p a{
+
+footer p a {
     color: var(--primary-white);
 }
-footer p a:hover{
+
+footer p a:hover {
     color: var(--primary-blue);
 }
+
 /* media queries  */
 
 @media (max-width: 860px) {
